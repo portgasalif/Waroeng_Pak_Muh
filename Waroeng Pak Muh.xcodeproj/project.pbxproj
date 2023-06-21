@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EB4024AD4799DF4B433302F /* Pods_Waroeng_Pak_Muh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1171AA6702E5ABFFF466E4AD /* Pods_Waroeng_Pak_Muh.framework */; };
+		9603016529986B5600EFC765 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603016429986B5600EFC765 /* MyAccountViewController.swift */; };
+		9605A71B2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */; };
+		9605A71D2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */; };
+		9606DC7E29EBFF3D006D9FDD /* DetailHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */; };
+		960899E029BCE37C00939FC1 /* BayarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960899DF29BCE37C00939FC1 /* BayarViewController.swift */; };
+		9618B55E2990D4EA007696F4 /* ForgotPWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */; };
+		9622C76229880A6E008686CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622C76129880A6E008686CF /* AppDelegate.swift */; };
+		9622C76429880A6E008686CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622C76329880A6E008686CF /* SceneDelegate.swift */; };
+		9622C76629880A6E008686CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622C76529880A6E008686CF /* LoginViewController.swift */; };
+		9622C76929880A6E008686CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622C76729880A6E008686CF /* Main.storyboard */; };
+		9622C76B29880A6F008686CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9622C76A29880A6F008686CF /* Assets.xcassets */; };
+		9622C76E29880A6F008686CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622C76C29880A6F008686CF /* LaunchScreen.storyboard */; };
+		962E341029E2379300604DA9 /* checkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */; };
+		963057A129ED68730012F92B /* DetailPenawaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963057A029ED68730012F92B /* DetailPenawaranViewController.swift */; };
+		96394DDB2988784A00EC055C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96394DDA2988784A00EC055C /* RegisterViewController.swift */; };
+		963DDD592996567A001750EF /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DDD582996567A001750EF /* ChangePasswordViewController.swift */; };
+		965556A929EC568E00EFCE13 /* historyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */; };
+		965772B129F7DE300013C525 /* InputAlamatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965772B029F7DE300013C525 /* InputAlamatViewController.swift */; };
+		965772B829F7E2FB0013C525 /* AlamatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */; };
+		965799E529FCBB3D006119C0 /* PilihLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */; };
+		965799E729FCBD55006119C0 /* PilihLokasiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */; };
+		9662A27E298C849C00017542 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662A27D298C849C00017542 /* MoreViewController.swift */; };
+		9662A280298C84BE00017542 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662A27F298C84BE00017542 /* LandingPageViewController.swift */; };
+		966BC8D229EB7EE1006BA39A /* MetodeBayarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */; };
+		966BC8D429EB7F28006BA39A /* MetodeBayarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */; };
+		96845E0F29ED274A004D1889 /* PenawaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96845E0E29ED274A004D1889 /* PenawaranViewController.swift */; };
+		96845E1129ED2788004D1889 /* PenawaranTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */; };
+		96851DA329FFDB6000E3CC5E /* OutletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */; };
+		968926D729E0F90D001305E2 /* PesanTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968926D629E0F90D001305E2 /* PesanTViewController.swift */; };
+		968926D929E0FC6D001305E2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */; };
+		968EE4822A26EA1D0025D667 /* LokasiRestoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */; };
+		96A2BD9F2A2849350001B02F /* MenuStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2BD9E2A2849350001B02F /* MenuStruct.swift */; };
+		96A6516029E3814200A54F09 /* historyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6515F29E3814200A54F09 /* historyTableView.swift */; };
+		96A6516229E38A2900A54F09 /* DetailMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */; };
+		96A867EB29ED94A700783A9F /* OutletLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */; };
+		96B7B46629881EF8005293A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96B7B46529881EF8005293A9 /* GoogleService-Info.plist */; };
+		96CB9C2729E37BD000340F4B /* historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */; };
+		96DC7E872A36CB9200B23AEF /* OrderSumStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */; };
+		96E75C5A29970C66003FD2C9 /* RestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E75C5929970C66003FD2C9 /* RestoranViewController.swift */; };
+		96F2D8692A1056ED00EA0094 /* Penawaran2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */; };
+		96F2D86B2A1056F500EA0094 /* DetailPenawarn2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */; };
+		96F6B31F2A0B03B4009C7C82 /* UlasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */; };
+		96FC286C298F2E59004E3F21 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1171AA6702E5ABFFF466E4AD /* Pods_Waroeng_Pak_Muh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waroeng_Pak_Muh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A849B50BA527A73C50983A8 /* Pods-Waroeng Pak Muh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waroeng Pak Muh.debug.xcconfig"; path = "Target Support Files/Pods-Waroeng Pak Muh/Pods-Waroeng Pak Muh.debug.xcconfig"; sourceTree = "<group>"; };
+		82DFF039A0CB2419ABC23DBE /* Pods-Waroeng Pak Muh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waroeng Pak Muh.release.xcconfig"; path = "Target Support Files/Pods-Waroeng Pak Muh/Pods-Waroeng Pak Muh.release.xcconfig"; sourceTree = "<group>"; };
+		9603016429986B5600EFC765 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyAccountViewController.swift; path = "Waroeng Pak Muh/MyAccountViewController.swift"; sourceTree = SOURCE_ROOT; };
+		9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocationOutletMenuViewController copy.swift"; sourceTree = "<group>"; };
+		9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOutletMenuTableViewCell.swift; sourceTree = "<group>"; };
+		9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryViewController.swift; sourceTree = "<group>"; };
+		960899DF29BCE37C00939FC1 /* BayarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayarViewController.swift; sourceTree = "<group>"; };
+		9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWDViewController.swift; sourceTree = "<group>"; };
+		9622C75E29880A6E008686CF /* Waroeng Pak Muh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Waroeng Pak Muh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9622C76129880A6E008686CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9622C76329880A6E008686CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9622C76529880A6E008686CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9622C76829880A6E008686CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9622C76A29880A6F008686CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9622C76D29880A6F008686CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9622C76F29880A6F008686CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkoutTableViewCell.swift; sourceTree = "<group>"; };
+		963057A029ED68730012F92B /* DetailPenawaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPenawaranViewController.swift; sourceTree = "<group>"; };
+		96394DDA2988784A00EC055C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
+		963DDD582996567A001750EF /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyDetailTableViewCell.swift; sourceTree = "<group>"; };
+		965772B029F7DE300013C525 /* InputAlamatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAlamatViewController.swift; sourceTree = "<group>"; };
+		965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamatTableViewCell.swift; sourceTree = "<group>"; };
+		965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihLokasiViewController.swift; sourceTree = "<group>"; };
+		965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihLokasiTableViewCell.swift; sourceTree = "<group>"; };
+		9662A27D298C849C00017542 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		9662A27F298C84BE00017542 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetodeBayarViewController.swift; sourceTree = "<group>"; };
+		966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetodeBayarClass.swift; sourceTree = "<group>"; };
+		96845E0E29ED274A004D1889 /* PenawaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenawaranViewController.swift; sourceTree = "<group>"; };
+		96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenawaranTableViewCell.swift; sourceTree = "<group>"; };
+		96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletTableViewCell.swift; sourceTree = "<group>"; };
+		968926D629E0F90D001305E2 /* PesanTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesanTViewController.swift; sourceTree = "<group>"; };
+		968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokasiRestoClass.swift; sourceTree = "<group>"; };
+		96A2BD9E2A2849350001B02F /* MenuStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStruct.swift; sourceTree = "<group>"; };
+		96A6515F29E3814200A54F09 /* historyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableView.swift; sourceTree = "<group>"; };
+		96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMenuViewController.swift; sourceTree = "<group>"; };
+		96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletLocationViewController.swift; sourceTree = "<group>"; };
+		96B7B46529881EF8005293A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewCell.swift; sourceTree = "<group>"; };
+		96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSumStruct.swift; sourceTree = "<group>"; };
+		96E75C5929970C66003FD2C9 /* RestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranViewController.swift; sourceTree = "<group>"; };
+		96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penawaran2ViewController.swift; sourceTree = "<group>"; };
+		96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPenawarn2ViewController.swift; sourceTree = "<group>"; };
+		96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlasanViewController.swift; sourceTree = "<group>"; };
+		96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9622C75B29880A6E008686CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB4024AD4799DF4B433302F /* Pods_Waroeng_Pak_Muh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9622C75529880A6E008686CF = {
+			isa = PBXGroup;
+			children = (
+				9622C76029880A6E008686CF /* Waroeng Pak Muh */,
+				9622C75F29880A6E008686CF /* Products */,
+				AE5D3814A7ABDE78EFFB7397 /* Pods */,
+				F898157C21A61D5AD068D399 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9622C75F29880A6E008686CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9622C75E29880A6E008686CF /* Waroeng Pak Muh.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9622C76029880A6E008686CF /* Waroeng Pak Muh */ = {
+			isa = PBXGroup;
+			children = (
+				9622C76129880A6E008686CF /* AppDelegate.swift */,
+				9622C76329880A6E008686CF /* SceneDelegate.swift */,
+				9652AAB129985569004026E4 /* Modals */,
+				96394DDC2988786900EC055C /* Controllers */,
+				9622C76729880A6E008686CF /* Main.storyboard */,
+				9622C76A29880A6F008686CF /* Assets.xcassets */,
+				9622C76C29880A6F008686CF /* LaunchScreen.storyboard */,
+				9622C76F29880A6F008686CF /* Info.plist */,
+				96B7B46529881EF8005293A9 /* GoogleService-Info.plist */,
+			);
+			path = "Waroeng Pak Muh";
+			sourceTree = "<group>";
+		};
+		96394DDC2988786900EC055C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */,
+				96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */,
+				96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */,
+				96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */,
+				9603016429986B5600EFC765 /* MyAccountViewController.swift */,
+				9622C76529880A6E008686CF /* LoginViewController.swift */,
+				9662A27D298C849C00017542 /* MoreViewController.swift */,
+				9662A27F298C84BE00017542 /* LandingPageViewController.swift */,
+				96394DDA2988784A00EC055C /* RegisterViewController.swift */,
+				9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */,
+				963DDD582996567A001750EF /* ChangePasswordViewController.swift */,
+				96E75C5929970C66003FD2C9 /* RestoranViewController.swift */,
+				960899DF29BCE37C00939FC1 /* BayarViewController.swift */,
+				968926D629E0F90D001305E2 /* PesanTViewController.swift */,
+				96A6515F29E3814200A54F09 /* historyTableView.swift */,
+				966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */,
+				9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */,
+				96845E0E29ED274A004D1889 /* PenawaranViewController.swift */,
+				963057A029ED68730012F92B /* DetailPenawaranViewController.swift */,
+				96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */,
+				965772B029F7DE300013C525 /* InputAlamatViewController.swift */,
+				965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */,
+				9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */,
+				96CD798729EA855D00F744F3 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9652AAB129985569004026E4 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */,
+				968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */,
+				96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */,
+				96A2BD9E2A2849350001B02F /* MenuStruct.swift */,
+				96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		96CD798729EA855D00F744F3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */,
+				968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */,
+				962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */,
+				965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */,
+				96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */,
+				96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */,
+				965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */,
+				96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */,
+				9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AE5D3814A7ABDE78EFFB7397 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A849B50BA527A73C50983A8 /* Pods-Waroeng Pak Muh.debug.xcconfig */,
+				82DFF039A0CB2419ABC23DBE /* Pods-Waroeng Pak Muh.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F898157C21A61D5AD068D399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1171AA6702E5ABFFF466E4AD /* Pods_Waroeng_Pak_Muh.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9622C75D29880A6E008686CF /* Waroeng Pak Muh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9622C77229880A6F008686CF /* Build configuration list for PBXNativeTarget "Waroeng Pak Muh" */;
+			buildPhases = (
+				34CFC81937206ABEC7EFAAB9 /* [CP] Check Pods Manifest.lock */,
+				9622C75A29880A6E008686CF /* Sources */,
+				9622C75B29880A6E008686CF /* Frameworks */,
+				9622C75C29880A6E008686CF /* Resources */,
+				729E42B0384B5403862F7DD8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Waroeng Pak Muh";
+			productName = "Waroeng Pak Muh";
+			productReference = 9622C75E29880A6E008686CF /* Waroeng Pak Muh.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9622C75629880A6E008686CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9622C75D29880A6E008686CF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9622C75929880A6E008686CF /* Build configuration list for PBXProject "Waroeng Pak Muh" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9622C75529880A6E008686CF;
+			productRefGroup = 9622C75F29880A6E008686CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9622C75D29880A6E008686CF /* Waroeng Pak Muh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9622C75C29880A6E008686CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9622C76E29880A6F008686CF /* LaunchScreen.storyboard in Resources */,
+				96B7B46629881EF8005293A9 /* GoogleService-Info.plist in Resources */,
+				9622C76B29880A6F008686CF /* Assets.xcassets in Resources */,
+				9622C76929880A6E008686CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34CFC81937206ABEC7EFAAB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Waroeng Pak Muh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		729E42B0384B5403862F7DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Waroeng Pak Muh/Pods-Waroeng Pak Muh-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Waroeng Pak Muh/Pods-Waroeng Pak Muh-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Waroeng Pak Muh/Pods-Waroeng Pak Muh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9622C75A29880A6E008686CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E75C5A29970C66003FD2C9 /* RestoranViewController.swift in Sources */,
+				966BC8D229EB7EE1006BA39A /* MetodeBayarViewController.swift in Sources */,
+				9605A71D2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift in Sources */,
+				96F2D86B2A1056F500EA0094 /* DetailPenawarn2ViewController.swift in Sources */,
+				96CB9C2729E37BD000340F4B /* historyTableViewCell.swift in Sources */,
+				96FC286C298F2E59004E3F21 /* UITabBarViewController.swift in Sources */,
+				9603016529986B5600EFC765 /* MyAccountViewController.swift in Sources */,
+				9662A27E298C849C00017542 /* MoreViewController.swift in Sources */,
+				9622C76629880A6E008686CF /* LoginViewController.swift in Sources */,
+				96845E1129ED2788004D1889 /* PenawaranTableViewCell.swift in Sources */,
+				96394DDB2988784A00EC055C /* RegisterViewController.swift in Sources */,
+				968926D729E0F90D001305E2 /* PesanTViewController.swift in Sources */,
+				965799E529FCBB3D006119C0 /* PilihLokasiViewController.swift in Sources */,
+				96A867EB29ED94A700783A9F /* OutletLocationViewController.swift in Sources */,
+				968EE4822A26EA1D0025D667 /* LokasiRestoClass.swift in Sources */,
+				96A2BD9F2A2849350001B02F /* MenuStruct.swift in Sources */,
+				963DDD592996567A001750EF /* ChangePasswordViewController.swift in Sources */,
+				9622C76229880A6E008686CF /* AppDelegate.swift in Sources */,
+				96DC7E872A36CB9200B23AEF /* OrderSumStruct.swift in Sources */,
+				968926D929E0FC6D001305E2 /* MenuTableViewCell.swift in Sources */,
+				96851DA329FFDB6000E3CC5E /* OutletTableViewCell.swift in Sources */,
+				9662A280298C84BE00017542 /* LandingPageViewController.swift in Sources */,
+				9622C76429880A6E008686CF /* SceneDelegate.swift in Sources */,
+				9606DC7E29EBFF3D006D9FDD /* DetailHistoryViewController.swift in Sources */,
+				960899E029BCE37C00939FC1 /* BayarViewController.swift in Sources */,
+				965799E729FCBD55006119C0 /* PilihLokasiTableViewCell.swift in Sources */,
+				963057A129ED68730012F92B /* DetailPenawaranViewController.swift in Sources */,
+				9618B55E2990D4EA007696F4 /* ForgotPWDViewController.swift in Sources */,
+				965772B829F7E2FB0013C525 /* AlamatTableViewCell.swift in Sources */,
+				96F6B31F2A0B03B4009C7C82 /* UlasanViewController.swift in Sources */,
+				966BC8D429EB7F28006BA39A /* MetodeBayarClass.swift in Sources */,
+				96F2D8692A1056ED00EA0094 /* Penawaran2ViewController.swift in Sources */,
+				96A6516029E3814200A54F09 /* historyTableView.swift in Sources */,
+				96A6516229E38A2900A54F09 /* DetailMenuViewController.swift in Sources */,
+				965772B129F7DE300013C525 /* InputAlamatViewController.swift in Sources */,
+				96845E0F29ED274A004D1889 /* PenawaranViewController.swift in Sources */,
+				965556A929EC568E00EFCE13 /* historyDetailTableViewCell.swift in Sources */,
+				962E341029E2379300604DA9 /* checkoutTableViewCell.swift in Sources */,
+				9605A71B2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9622C76729880A6E008686CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9622C76829880A6E008686CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9622C76C29880A6F008686CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9622C76D29880A6F008686CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9622C77029880A6F008686CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9622C77129880A6F008686CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9622C77329880A6F008686CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A849B50BA527A73C50983A8 /* Pods-Waroeng Pak Muh.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJD47ZVUJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Waroeng Pak Muh/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waroeng Pak Muh";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to display your current location on the map.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alfey.Waroeng-Pak-Muh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9622C77429880A6F008686CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DFF039A0CB2419ABC23DBE /* Pods-Waroeng Pak Muh.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJD47ZVUJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Waroeng Pak Muh/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waroeng Pak Muh";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to display your current location on the map.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Alfey.Waroeng-Pak-Muh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9622C75929880A6E008686CF /* Build configuration list for PBXProject "Waroeng Pak Muh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9622C77029880A6F008686CF /* Debug */,
+				9622C77129880A6F008686CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9622C77229880A6F008686CF /* Build configuration list for PBXNativeTarget "Waroeng Pak Muh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9622C77329880A6F008686CF /* Debug */,
+				9622C77429880A6F008686CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9622C75629880A6E008686CF /* Project object */;
+}

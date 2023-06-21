@@ -1,0 +1,6 @@
+framework module Pods_Waroeng_Pak_Muh {
+  umbrella header "Pods-Waroeng Pak Muh-umbrella.h"
+
+  export *
+  module * { export * }
+}
