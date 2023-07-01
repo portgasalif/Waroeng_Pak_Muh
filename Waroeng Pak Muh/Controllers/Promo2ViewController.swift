@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Penawaran2ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class Promo2ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
 
     var dataPromo: [Promo] = [
         Promo(imagePromo: "Promo1"),
@@ -44,7 +44,7 @@ class Penawaran2ViewController: UIViewController,UITableViewDataSource, UITableV
         performSegue(withIdentifier: "detailPromoSegue", sender: selectedPromo)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detailVC = segue.destination as? DetailPenawaranViewController,
+        if let detailVC = segue.destination as? DetailPromoViewController,
            let indexPath = promoTable.indexPathForSelectedRow {
             detailVC.selectedPromo = dataPromo[indexPath.row]
         }

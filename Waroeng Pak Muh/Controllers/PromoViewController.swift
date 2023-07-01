@@ -9,7 +9,7 @@ import UIKit
 struct Promo {
     let imagePromo: String
 }
-class PenawaranViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PromoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var dataPromo: [Promo] = [
         Promo(imagePromo: "Promo1"),
@@ -45,7 +45,7 @@ class PenawaranViewController: UIViewController, UITableViewDataSource, UITableV
         performSegue(withIdentifier: "detailPromoSegue", sender: selectedPromo)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detailVC = segue.destination as? DetailPenawaranViewController,
+        if let detailVC = segue.destination as? DetailPromoViewController,
            let indexPath = promoTable.indexPathForSelectedRow {
             detailVC.selectedPromo = dataPromo[indexPath.row]
         }

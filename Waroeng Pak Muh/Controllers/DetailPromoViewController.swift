@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class DetailPenawaranViewController: UIViewController {
+class DetailPromoViewController: UIViewController {
     @IBOutlet weak var detailPromoImage: UIImageView!
     @IBOutlet weak var detailButtonPromo: UIButton!
     var selectedPromo : Promo?

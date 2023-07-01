@@ -67,8 +67,6 @@ class PilihLokasiViewController: UIViewController,UITableViewDelegate, UITableVi
     
 }
 extension PilihLokasiViewController {
-    
-    // MARK: - Helper Methods
     func fetchAddresses() {
         guard let userID = userID else {
             print("Tidak ada pengguna yang masuk")

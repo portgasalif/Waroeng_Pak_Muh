@@ -7,39 +7,46 @@
 
 import UIKit
 import MapKit
-class DetailHistoryViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate{
+class DetailPesananViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
-    
     @IBOutlet weak var historyMenuTable: UITableView!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var totalFixLabel: UILabel!
     @IBOutlet weak var biayaAntarLabel: UILabel!
-    @IBOutlet weak var hargaPromoLabel: UILabel!
     @IBOutlet weak var promoLabel: UILabel!
-    var dataPesanan: [Menu] = []
+    @IBOutlet weak var hargaPromoLabelDetail: UILabel!
+    @IBOutlet weak var alamatPenerima: UILabel!
+    @IBOutlet weak var namaPenerima: UILabel!
     
+    var dataPesanan: [Menu] = []
+    var totalPrice: Double = 0.0
+    let biayaAntar : Double = 10.0
+    var promoPrice : Double = 12.0
+    var selectedDetailAlamat: String?
+    var selectedNama: String?
+    var selectedAlamat: String?
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupGestureRecognizer()
-        setupLabels()
-        loadData()
         updatePromoLabel()
         updateHargaPromoLabel()
+        updateTotalHarga()
+        locationManagerDelegate()
+        detailPenerima()
         
         historyMenuTable.delegate = self
         historyMenuTable.dataSource = self
-        mapView.delegate = self
-        mapView.showsUserLocation = true
         
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        biayaAntarLabel.text = "Rp10.000"
+        let attributedText = NSAttributedString(string: "Rp12.000", attributes: [.strikethroughStyle: NSUnderlineStyle.thick.rawValue])
+        hargaPromoLabelDetail.attributedText = attributedText
         
+        // Hide the back button
+        self.navigationItem.hidesBackButton = true
     }
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -54,7 +61,7 @@ class DetailHistoryViewController: UIViewController,UITableViewDataSource, UITab
         
         let menu = dataPesanan[indexPath.row]
         cell.historyLabel.text = menu.menuItems
-        cell.historyPrices.text = String(format: "Rp.%.3f", menu.prices * Double(menu.qtys))
+        cell.historyPrices.text = String(format: "Rp. %.3f", menu.prices * Double(menu.qtys))
         cell.historyImage.image = UIImage(named: menu.imageMenu)
         
         return cell
@@ -62,58 +69,40 @@ class DetailHistoryViewController: UIViewController,UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
         return false
     }
+    //MARK: - Button
+    @IBAction func kembaliKeBeranda(_ sender: UIButton) {
+        MetodeBayarClass.selectedMethod = 0
+        MetodeBayarClass.selectedPromoPrice = 0
+    }
     
 }
-
-extension DetailHistoryViewController{
+//MARK: - Function-Function
+extension DetailPesananViewController{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last! as CLLocation
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.mapView.setRegion(region, animated: true)
     }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error: \(error)")
-    }
     func setupGestureRecognizer() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     
-    func setupLabels() {
-        let text = "Rp.12.000"
-        let attributedString = NSMutableAttributedString(string: text)
-        attributedString.addAttribute(NSAttributedString.Key.strikethroughStyle,
-                                      value: 2,
-                                      range: NSRange(location: 0, length: text.count))
-        hargaPromoLabel.attributedText = attributedString
-    }
-    
-    func loadData() {
-        if let savedData = UserDefaults.standard.object(forKey: "dataPesanan") as? Data {
-            let decoder = JSONDecoder()
-            if let loadedData = try? decoder.decode([Menu].self, from: savedData) {
-                dataPesanan = loadedData
-            }
+    func updateTotalHarga() {
+        totalLabel.text = String(format: "Rp%.3f", totalPrice)
+        
+        if MetodeBayarClass.selectedPromoPrice == 1 {
+            totalFixLabel.text = String(format: "Total: Rp%.3f", totalPrice + biayaAntar - promoPrice)
+        } else {
+            totalFixLabel.text = String(format: "Total: Rp%.3f", totalPrice + biayaAntar)
         }
-        
-        // Muat data dari UserDefaults
-        let total = UserDefaults.standard.double(forKey: "total")
-        let totalFix = UserDefaults.standard.double(forKey: "totalFix")
-        let hargaPromo = UserDefaults.standard.double(forKey: "hargaPromo")
-        
-        // Tampilkan data di label
-        totalLabel.text = String(format: "Rp.%.3f", total)
-        totalFixLabel.text = String(format: "Total: Rp.%.3f", totalFix)
-        hargaPromoLabel.text = String(format: "Rp.%.3f", hargaPromo)
     }
-    
     func updateHargaPromoLabel() {
         if MetodeBayarClass.selectedPromoPrice == 1 {
-            hargaPromoLabel.isHidden = false
+            hargaPromoLabelDetail.isHidden = false
         } else {
-            hargaPromoLabel.isHidden = true
+            hargaPromoLabelDetail.isHidden = true
         }
     }
     func updatePromoLabel(){
@@ -123,5 +112,17 @@ extension DetailHistoryViewController{
             promoLabel.isHidden = true
         }
     }
-    
+    func locationManagerDelegate(){
+        mapView.delegate = self
+        mapView.showsUserLocation = true
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    func detailPenerima(){
+        namaPenerima.text = selectedNama
+        alamatPenerima.text = selectedAlamat
+    }
 }

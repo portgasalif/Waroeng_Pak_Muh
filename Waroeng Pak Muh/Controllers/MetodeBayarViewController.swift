@@ -6,14 +6,10 @@
 //
 
 import UIKit
-
-
 class MetodeBayarViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     @IBAction func metodePembayaranDana(_ sender: UIButton) {
         MetodeBayarClass.selectedMethod = 1
         let alertcontroller = UIAlertController(title: "Dana Telah Dipilih", message: "", preferredStyle: .alert)
@@ -44,9 +40,6 @@ class MetodeBayarViewController: UIViewController {
         alertcontroller.addAction(okaction)
         present(alertcontroller, animated: true, completion: nil)
     }
-    
-    
-    
 }
 
 

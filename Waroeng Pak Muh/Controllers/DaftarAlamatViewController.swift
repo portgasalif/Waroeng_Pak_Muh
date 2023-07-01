@@ -21,10 +21,10 @@ struct Alamat: Codable {
             "nohp": nohp,
             "detailalamat": detailalamat
         ]
+        //Firestore memerlukan data dalam bentuk kamus untuk menambahkan dokumen baru ke database. Oleh karena itu, dictionaryRepresentation digunakan untuk mengonversi data dari Alamat struct ke dalam bentuk kamus yang dapat diterima oleh Firestore.
     }
 }
-
-class InputAlamatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class DaftarAlamatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     // MARK: - Outlets
     @IBOutlet weak var namaTextField: UITextField!
@@ -55,6 +55,7 @@ class InputAlamatViewController: UIViewController, UITableViewDelegate, UITableV
         // Tambahkan observer keyboardWillShow dan keyboardWillHide
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
         
         // Set delegasi UITextField
         namaTextField.delegate = self
@@ -152,9 +153,6 @@ class InputAlamatViewController: UIViewController, UITableViewDelegate, UITableV
             present(alert, animated: true, completion: nil)
         }
     }
-
-
-    
     // MARK: - Actions
     @IBAction func simpanButtonTapped(_ sender: Any) {
         guard let userID = userID else {
@@ -191,52 +189,13 @@ class InputAlamatViewController: UIViewController, UITableViewDelegate, UITableV
             }
         }
     }
-    
-    // MARK: - Helper Methods
-    func fetchAddresses() {
-        guard let userID = userID else {
-            print("Tidak ada pengguna yang masuk")
-            return
-        }
-        
-        db.collection("users").document(userID).collection("addresses").getDocuments { (snapshot, error) in
-            if let error = error {
-                print("Terjadi kesalahan saat mengambil alamat: \(error)")
-                return
-            }
-            
-            guard let documents = snapshot?.documents else {
-                print("Dokumen tidak ditemukan")
-                return
-            }
-            
-            self.data = documents.compactMap { document -> Alamat? in
-                let data = document.data()
-                let nama = data["nama"] as? String ?? ""
-                let nohp = data["nohp"] as? String ?? ""
-                let detailalamat = data["detailalamat"] as? String ?? ""
-                return Alamat(nama: nama, nohp: nohp, detailalamat: detailalamat)
-            }
-            // Mengurutkan data alamat berdasarkan nama
-                    self.data.sort { $0.nama < $1.nama }
-            self.AlamattableView.reloadData()
-        }
-    }
-    
-    func clearFields() {
-        namaTextField.text = ""
-        noHpTextField.text = ""
-        alamatTextField.text = ""
-    }
 }
-
-extension InputAlamatViewController {
+extension DaftarAlamatViewController {
     func checkDataInFirestore() {
         guard let userID = userID else {
             print("Tidak ada pengguna yang masuk")
             return
         }
-        
         db.collection("users").document(userID).collection("addresses").getDocuments { (snapshot, error) in
             if let error = error {
                 print("Terjadi kesalahan saat mengambil data: \(error)")
@@ -280,4 +239,40 @@ extension InputAlamatViewController {
             }
         }
     }
-}
+        func fetchAddresses() {
+            guard let userID = userID else {
+                print("Tidak ada pengguna yang masuk")
+                return
+            }
+            
+            db.collection("users").document(userID).collection("addresses").getDocuments { (snapshot, error) in
+                if let error = error {
+                    print("Terjadi kesalahan saat mengambil alamat: \(error)")
+                    return
+                }
+                
+                guard let documents = snapshot?.documents else {
+                    print("Dokumen tidak ditemukan")
+                    return
+                }
+                
+                self.data = documents.compactMap { document -> Alamat? in
+                    let data = document.data()
+                    let nama = data["nama"] as? String ?? ""
+                    let nohp = data["nohp"] as? String ?? ""
+                    let detailalamat = data["detailalamat"] as? String ?? ""
+                    return Alamat(nama: nama, nohp: nohp, detailalamat: detailalamat)
+                }
+                // Mengurutkan data alamat berdasarkan nama
+                self.data.sort { $0.nama < $1.nama }
+                self.AlamattableView.reloadData()
+            }
+        }
+        
+        func clearFields() {
+            namaTextField.text = ""
+            noHpTextField.text = ""
+            alamatTextField.text = ""
+        }
+    }
+

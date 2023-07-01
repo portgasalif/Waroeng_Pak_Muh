@@ -10,7 +10,7 @@ struct WPMAddress {
     var street: String
     var city: String
 }
-class OutletLocationViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
+class LokasiRestoranViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var outletTableView: UITableView!
     let addresses = [

@@ -29,8 +29,8 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         alamatLabel.text = selectedDetailAlamat
-        totalLabel.text = String(format: "Rp.%.3f", totalPrice)
-        biayaAntarLabel.text = String(format: "Rp.%.3f", biayaAntar)
+        totalLabel.text = String(format: "Rp%.3f", totalPrice)
+        biayaAntarLabel.text = String(format: "Rp%.3f", biayaAntar)
         
         checkoutTableView.delegate = self
         checkoutTableView.dataSource = self
@@ -38,12 +38,9 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        let text = "Rp.12.000"
-        let attributedString = NSMutableAttributedString(string: text)
-        attributedString.addAttribute(NSAttributedString.Key.strikethroughStyle,
-                                      value: 2,
-                                      range: NSRange(location: 0, length: text.count))
-        hargaPromoLabel.attributedText = attributedString
+        let attributedText = NSAttributedString(string: "Rp12.000", attributes: [.strikethroughStyle: NSUnderlineStyle.thick.rawValue])
+        hargaPromoLabel.attributedText = attributedText
+        
         updatePromo()
         updateTotalHarga()
         updateMetodeBayar()
@@ -60,7 +57,6 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Jumlah row = jumlah data di array Menu
@@ -71,25 +67,13 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
         
         let menu = dataPesanan[indexPath.row]
         cell.checkoutLabel.text = menu.menuItems
-        cell.checkoutMenuPrices.text = String(format: "Rp.%.3f", menu.prices * Double(menu.qtys))
+        cell.checkoutMenuPrices.text = String(format: "Rp%.3f", menu.prices * Double(menu.qtys))
         cell.checkoutImage.image = UIImage(named: menu.imageMenu)
         
         return cell
     }
     //MARK: - Bayar Button Tapped
     @IBAction func bayarButtonTapped(_ sender: UIButton) {
-        let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(dataPesanan) {
-            UserDefaults.standard.set(encoded, forKey: "dataPesanan")
-        }
-        UserDefaults.standard.set(totalPrice, forKey: "total")
-        if MetodeBayarClass.selectedPromoPrice == 1 {
-            UserDefaults.standard.set(totalPrice + biayaAntar - promoPrice, forKey: "totalFix")
-        } else {
-            UserDefaults.standard.set(totalPrice + biayaAntar, forKey: "totalFix")
-        }
-
-        
         if namaLabel.text?.isEmpty ?? true {
             // namaLabel kosong, tampilkan peringatan
             let alertController = UIAlertController(title: "Error", message: "Alamat harus diisi", preferredStyle: .alert)
@@ -112,14 +96,13 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
             // namaLabel tidak kosong dan lokasiRestoButton sudah dipilih dan MetodeBayarClass.selectedMethod tidak sama dengan 0, lanjutkan dengan pembayaran
             let alertController = UIAlertController(title: "Pembayaran Berhasil", message: "Terima kasih telah melakukan pembayaran", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-                self.performSegue(withIdentifier: "BayarToHistory", sender: self)
+                self.performSegue(withIdentifier: "BayarToDetailPesanan", sender: self)
             }
             alertController.addAction(okAction)
             present(alertController, animated: true, completion: nil)
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("prepare for segue called")
         if let pilihLokasiVC = segue.destination as? PilihLokasiViewController {
             // set the delegate to self
             pilihLokasiVC.delegate = self
@@ -127,6 +110,14 @@ class BayarViewController: UIViewController,UITableViewDataSource, UITableViewDe
             locationOutletMenuViewController.delegate = self
         } else if let alamat = sender as? Alamat {
             selectedDetailAlamat = alamat.detailalamat
+        }
+        else if segue.identifier == "BayarToDetailPesanan" {
+            let detailHistoryVC = segue.destination as! DetailPesananViewController
+            detailHistoryVC.totalPrice = self.totalPrice
+            detailHistoryVC.dataPesanan = self.dataPesanan
+            detailHistoryVC.selectedAlamat = self.alamatLabel.text
+            detailHistoryVC.selectedNama = self.namaLabel.text
+                   
         }
     }
 }
@@ -157,9 +148,9 @@ extension BayarViewController {
     
     func updateTotalHarga() {
         if MetodeBayarClass.selectedPromoPrice == 1 {
-            totalFixLabel.text = String(format: "Total: Rp.%.3f", totalPrice + biayaAntar - promoPrice)
+            totalFixLabel.text = String(format: "Total: Rp%.3f", totalPrice + biayaAntar - promoPrice)
         } else {
-            totalFixLabel.text = String(format: "Total: Rp.%.3f", totalPrice + biayaAntar)
+            totalFixLabel.text = String(format: "Total: Rp%.3f", totalPrice + biayaAntar)
         }
     }
     

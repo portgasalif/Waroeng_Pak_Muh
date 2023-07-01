@@ -11,7 +11,7 @@
 		9603016529986B5600EFC765 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603016429986B5600EFC765 /* MyAccountViewController.swift */; };
 		9605A71B2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */; };
 		9605A71D2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */; };
-		9606DC7E29EBFF3D006D9FDD /* DetailHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */; };
+		9606DC7E29EBFF3D006D9FDD /* DetailPesananViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9606DC7D29EBFF3D006D9FDD /* DetailPesananViewController.swift */; };
 		960899E029BCE37C00939FC1 /* BayarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960899DF29BCE37C00939FC1 /* BayarViewController.swift */; };
 		9618B55E2990D4EA007696F4 /* ForgotPWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */; };
 		9622C76229880A6E008686CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9622C76129880A6E008686CF /* AppDelegate.swift */; };
@@ -21,11 +21,12 @@
 		9622C76B29880A6F008686CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9622C76A29880A6F008686CF /* Assets.xcassets */; };
 		9622C76E29880A6F008686CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9622C76C29880A6F008686CF /* LaunchScreen.storyboard */; };
 		962E341029E2379300604DA9 /* checkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */; };
-		963057A129ED68730012F92B /* DetailPenawaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963057A029ED68730012F92B /* DetailPenawaranViewController.swift */; };
+		963057A129ED68730012F92B /* DetailPromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963057A029ED68730012F92B /* DetailPromoViewController.swift */; };
 		96394DDB2988784A00EC055C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96394DDA2988784A00EC055C /* RegisterViewController.swift */; };
 		963DDD592996567A001750EF /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DDD582996567A001750EF /* ChangePasswordViewController.swift */; };
+		9648BE2B2A4BABA400EC866F /* BatalkanPesananViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9648BE2A2A4BABA400EC866F /* BatalkanPesananViewController.swift */; };
 		965556A929EC568E00EFCE13 /* historyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */; };
-		965772B129F7DE300013C525 /* InputAlamatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965772B029F7DE300013C525 /* InputAlamatViewController.swift */; };
+		965772B129F7DE300013C525 /* DaftarAlamatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965772B029F7DE300013C525 /* DaftarAlamatViewController.swift */; };
 		965772B829F7E2FB0013C525 /* AlamatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */; };
 		965799E529FCBB3D006119C0 /* PilihLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */; };
 		965799E729FCBD55006119C0 /* PilihLokasiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */; };
@@ -33,24 +34,25 @@
 		9662A280298C84BE00017542 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662A27F298C84BE00017542 /* LandingPageViewController.swift */; };
 		966BC8D229EB7EE1006BA39A /* MetodeBayarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */; };
 		966BC8D429EB7F28006BA39A /* MetodeBayarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */; };
-		96845E0F29ED274A004D1889 /* PenawaranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96845E0E29ED274A004D1889 /* PenawaranViewController.swift */; };
+		96845E0F29ED274A004D1889 /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96845E0E29ED274A004D1889 /* PromoViewController.swift */; };
 		96845E1129ED2788004D1889 /* PenawaranTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */; };
 		96851DA329FFDB6000E3CC5E /* OutletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */; };
 		968926D729E0F90D001305E2 /* PesanTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968926D629E0F90D001305E2 /* PesanTViewController.swift */; };
 		968926D929E0FC6D001305E2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */; };
 		968EE4822A26EA1D0025D667 /* LokasiRestoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */; };
 		96A2BD9F2A2849350001B02F /* MenuStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2BD9E2A2849350001B02F /* MenuStruct.swift */; };
-		96A6516029E3814200A54F09 /* historyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6515F29E3814200A54F09 /* historyTableView.swift */; };
+		96A6516029E3814200A54F09 /* RiwayatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6515F29E3814200A54F09 /* RiwayatTableView.swift */; };
 		96A6516229E38A2900A54F09 /* DetailMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */; };
-		96A867EB29ED94A700783A9F /* OutletLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */; };
+		96A867EB29ED94A700783A9F /* LokasiRestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A867EA29ED94A700783A9F /* LokasiRestoranViewController.swift */; };
 		96B7B46629881EF8005293A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96B7B46529881EF8005293A9 /* GoogleService-Info.plist */; };
+		96BBE1A42A4BEDBA0027C7B7 /* DetailRiwayatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBE1A32A4BEDBA0027C7B7 /* DetailRiwayatViewController.swift */; };
+		96BBE1A62A4BEEFD0027C7B7 /* RiwayatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBE1A52A4BEEFD0027C7B7 /* RiwayatDetailViewController.swift */; };
+		96BBE1AA2A4BF9600027C7B7 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBE1A92A4BF9600027C7B7 /* UITabBarViewController.swift */; };
 		96CB9C2729E37BD000340F4B /* historyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */; };
-		96DC7E872A36CB9200B23AEF /* OrderSumStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */; };
 		96E75C5A29970C66003FD2C9 /* RestoranViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E75C5929970C66003FD2C9 /* RestoranViewController.swift */; };
-		96F2D8692A1056ED00EA0094 /* Penawaran2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */; };
-		96F2D86B2A1056F500EA0094 /* DetailPenawarn2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */; };
+		96F2D8692A1056ED00EA0094 /* Promo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D8682A1056ED00EA0094 /* Promo2ViewController.swift */; };
+		96F2D86B2A1056F500EA0094 /* DetailPromo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2D86A2A1056F500EA0094 /* DetailPromo2ViewController.swift */; };
 		96F6B31F2A0B03B4009C7C82 /* UlasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */; };
-		96FC286C298F2E59004E3F21 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +62,7 @@
 		9603016429986B5600EFC765 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyAccountViewController.swift; path = "Waroeng Pak Muh/MyAccountViewController.swift"; sourceTree = SOURCE_ROOT; };
 		9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocationOutletMenuViewController copy.swift"; sourceTree = "<group>"; };
 		9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOutletMenuTableViewCell.swift; sourceTree = "<group>"; };
-		9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHistoryViewController.swift; sourceTree = "<group>"; };
+		9606DC7D29EBFF3D006D9FDD /* DetailPesananViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPesananViewController.swift; sourceTree = "<group>"; };
 		960899DF29BCE37C00939FC1 /* BayarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayarViewController.swift; sourceTree = "<group>"; };
 		9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPWDViewController.swift; sourceTree = "<group>"; };
 		9622C75E29880A6E008686CF /* Waroeng Pak Muh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Waroeng Pak Muh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,11 +74,12 @@
 		9622C76D29880A6F008686CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9622C76F29880A6F008686CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkoutTableViewCell.swift; sourceTree = "<group>"; };
-		963057A029ED68730012F92B /* DetailPenawaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPenawaranViewController.swift; sourceTree = "<group>"; };
+		963057A029ED68730012F92B /* DetailPromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPromoViewController.swift; sourceTree = "<group>"; };
 		96394DDA2988784A00EC055C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
 		963DDD582996567A001750EF /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		9648BE2A2A4BABA400EC866F /* BatalkanPesananViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatalkanPesananViewController.swift; sourceTree = "<group>"; };
 		965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyDetailTableViewCell.swift; sourceTree = "<group>"; };
-		965772B029F7DE300013C525 /* InputAlamatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAlamatViewController.swift; sourceTree = "<group>"; };
+		965772B029F7DE300013C525 /* DaftarAlamatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarAlamatViewController.swift; sourceTree = "<group>"; };
 		965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamatTableViewCell.swift; sourceTree = "<group>"; };
 		965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihLokasiViewController.swift; sourceTree = "<group>"; };
 		965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihLokasiTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,24 +87,25 @@
 		9662A27F298C84BE00017542 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetodeBayarViewController.swift; sourceTree = "<group>"; };
 		966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetodeBayarClass.swift; sourceTree = "<group>"; };
-		96845E0E29ED274A004D1889 /* PenawaranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenawaranViewController.swift; sourceTree = "<group>"; };
+		96845E0E29ED274A004D1889 /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
 		96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenawaranTableViewCell.swift; sourceTree = "<group>"; };
 		96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletTableViewCell.swift; sourceTree = "<group>"; };
 		968926D629E0F90D001305E2 /* PesanTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PesanTViewController.swift; sourceTree = "<group>"; };
 		968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokasiRestoClass.swift; sourceTree = "<group>"; };
 		96A2BD9E2A2849350001B02F /* MenuStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStruct.swift; sourceTree = "<group>"; };
-		96A6515F29E3814200A54F09 /* historyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableView.swift; sourceTree = "<group>"; };
+		96A6515F29E3814200A54F09 /* RiwayatTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTableView.swift; sourceTree = "<group>"; };
 		96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMenuViewController.swift; sourceTree = "<group>"; };
-		96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletLocationViewController.swift; sourceTree = "<group>"; };
+		96A867EA29ED94A700783A9F /* LokasiRestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokasiRestoranViewController.swift; sourceTree = "<group>"; };
 		96B7B46529881EF8005293A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96BBE1A32A4BEDBA0027C7B7 /* DetailRiwayatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRiwayatViewController.swift; sourceTree = "<group>"; };
+		96BBE1A52A4BEEFD0027C7B7 /* RiwayatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatDetailViewController.swift; sourceTree = "<group>"; };
+		96BBE1A92A4BF9600027C7B7 /* UITabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 		96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyTableViewCell.swift; sourceTree = "<group>"; };
-		96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSumStruct.swift; sourceTree = "<group>"; };
 		96E75C5929970C66003FD2C9 /* RestoranViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoranViewController.swift; sourceTree = "<group>"; };
-		96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penawaran2ViewController.swift; sourceTree = "<group>"; };
-		96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPenawarn2ViewController.swift; sourceTree = "<group>"; };
+		96F2D8682A1056ED00EA0094 /* Promo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo2ViewController.swift; sourceTree = "<group>"; };
+		96F2D86A2A1056F500EA0094 /* DetailPromo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPromo2ViewController.swift; sourceTree = "<group>"; };
 		96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlasanViewController.swift; sourceTree = "<group>"; };
-		96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 				9622C76129880A6E008686CF /* AppDelegate.swift */,
 				9622C76329880A6E008686CF /* SceneDelegate.swift */,
 				9652AAB129985569004026E4 /* Modals */,
+				96CD798729EA855D00F744F3 /* Cell */,
 				96394DDC2988786900EC055C /* Controllers */,
 				9622C76729880A6E008686CF /* Main.storyboard */,
 				9622C76A29880A6F008686CF /* Assets.xcassets */,
@@ -153,30 +158,32 @@
 		96394DDC2988786900EC055C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */,
-				96F2D8682A1056ED00EA0094 /* Penawaran2ViewController.swift */,
-				96F2D86A2A1056F500EA0094 /* DetailPenawarn2ViewController.swift */,
-				96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */,
-				9603016429986B5600EFC765 /* MyAccountViewController.swift */,
-				9622C76529880A6E008686CF /* LoginViewController.swift */,
-				9662A27D298C849C00017542 /* MoreViewController.swift */,
-				9662A27F298C84BE00017542 /* LandingPageViewController.swift */,
-				96394DDA2988784A00EC055C /* RegisterViewController.swift */,
-				9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */,
-				963DDD582996567A001750EF /* ChangePasswordViewController.swift */,
-				96E75C5929970C66003FD2C9 /* RestoranViewController.swift */,
+				9648BE2A2A4BABA400EC866F /* BatalkanPesananViewController.swift */,
 				960899DF29BCE37C00939FC1 /* BayarViewController.swift */,
-				968926D629E0F90D001305E2 /* PesanTViewController.swift */,
-				96A6515F29E3814200A54F09 /* historyTableView.swift */,
-				966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */,
-				9606DC7D29EBFF3D006D9FDD /* DetailHistoryViewController.swift */,
-				96845E0E29ED274A004D1889 /* PenawaranViewController.swift */,
-				963057A029ED68730012F92B /* DetailPenawaranViewController.swift */,
-				96A867EA29ED94A700783A9F /* OutletLocationViewController.swift */,
-				965772B029F7DE300013C525 /* InputAlamatViewController.swift */,
-				965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */,
+				963DDD582996567A001750EF /* ChangePasswordViewController.swift */,
+				965772B029F7DE300013C525 /* DaftarAlamatViewController.swift */,
+				96A6516129E38A2900A54F09 /* DetailMenuViewController.swift */,
+				9606DC7D29EBFF3D006D9FDD /* DetailPesananViewController.swift */,
+				96F2D86A2A1056F500EA0094 /* DetailPromo2ViewController.swift */,
+				963057A029ED68730012F92B /* DetailPromoViewController.swift */,
+				96BBE1A32A4BEDBA0027C7B7 /* DetailRiwayatViewController.swift */,
+				9618B55D2990D4EA007696F4 /* ForgotPWDViewController.swift */,
+				9662A27F298C84BE00017542 /* LandingPageViewController.swift */,
 				9605A71A2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift */,
-				96CD798729EA855D00F744F3 /* Cell */,
+				9622C76529880A6E008686CF /* LoginViewController.swift */,
+				96A867EA29ED94A700783A9F /* LokasiRestoranViewController.swift */,
+				966BC8D129EB7EE1006BA39A /* MetodeBayarViewController.swift */,
+				9662A27D298C849C00017542 /* MoreViewController.swift */,
+				9603016429986B5600EFC765 /* MyAccountViewController.swift */,
+				968926D629E0F90D001305E2 /* PesanTViewController.swift */,
+				965799E429FCBB3D006119C0 /* PilihLokasiViewController.swift */,
+				96F2D8682A1056ED00EA0094 /* Promo2ViewController.swift */,
+				96845E0E29ED274A004D1889 /* PromoViewController.swift */,
+				96394DDA2988784A00EC055C /* RegisterViewController.swift */,
+				96E75C5929970C66003FD2C9 /* RestoranViewController.swift */,
+				96A6515F29E3814200A54F09 /* RiwayatTableView.swift */,
+				96BBE1A52A4BEEFD0027C7B7 /* RiwayatDetailViewController.swift */,
+				96F6B31E2A0B03B4009C7C82 /* UlasanViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,11 +191,10 @@
 		9652AAB129985569004026E4 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */,
 				968EE4812A26EA1D0025D667 /* LokasiRestoClass.swift */,
-				96FC286B298F2E59004E3F21 /* UITabBarViewController.swift */,
 				96A2BD9E2A2849350001B02F /* MenuStruct.swift */,
-				96DC7E862A36CB9200B23AEF /* OrderSumStruct.swift */,
+				966BC8D329EB7F28006BA39A /* MetodeBayarClass.swift */,
+				96BBE1A92A4BF9600027C7B7 /* UITabBarViewController.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -197,14 +203,14 @@
 			isa = PBXGroup;
 			children = (
 				965772B729F7E2FB0013C525 /* AlamatTableViewCell.swift */,
-				968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */,
 				962E340F29E2379300604DA9 /* checkoutTableViewCell.swift */,
 				965556A829EC568E00EFCE13 /* historyDetailTableViewCell.swift */,
 				96CB9C2629E37BD000340F4B /* historyTableViewCell.swift */,
+				9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */,
+				968926D829E0FC6D001305E2 /* MenuTableViewCell.swift */,
+				96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */,
 				96845E1029ED2788004D1889 /* PenawaranTableViewCell.swift */,
 				965799E629FCBD55006119C0 /* PilihLokasiTableViewCell.swift */,
-				96851DA229FFDB6000E3CC5E /* OutletTableViewCell.swift */,
-				9605A71C2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -345,9 +351,9 @@
 				96E75C5A29970C66003FD2C9 /* RestoranViewController.swift in Sources */,
 				966BC8D229EB7EE1006BA39A /* MetodeBayarViewController.swift in Sources */,
 				9605A71D2A261A5F00BA0023 /* LocationOutletMenuTableViewCell.swift in Sources */,
-				96F2D86B2A1056F500EA0094 /* DetailPenawarn2ViewController.swift in Sources */,
+				96F2D86B2A1056F500EA0094 /* DetailPromo2ViewController.swift in Sources */,
 				96CB9C2729E37BD000340F4B /* historyTableViewCell.swift in Sources */,
-				96FC286C298F2E59004E3F21 /* UITabBarViewController.swift in Sources */,
+				96BBE1A62A4BEEFD0027C7B7 /* RiwayatDetailViewController.swift in Sources */,
 				9603016529986B5600EFC765 /* MyAccountViewController.swift in Sources */,
 				9662A27E298C849C00017542 /* MoreViewController.swift in Sources */,
 				9622C76629880A6E008686CF /* LoginViewController.swift in Sources */,
@@ -355,29 +361,31 @@
 				96394DDB2988784A00EC055C /* RegisterViewController.swift in Sources */,
 				968926D729E0F90D001305E2 /* PesanTViewController.swift in Sources */,
 				965799E529FCBB3D006119C0 /* PilihLokasiViewController.swift in Sources */,
-				96A867EB29ED94A700783A9F /* OutletLocationViewController.swift in Sources */,
+				96BBE1A42A4BEDBA0027C7B7 /* DetailRiwayatViewController.swift in Sources */,
+				96BBE1AA2A4BF9600027C7B7 /* UITabBarViewController.swift in Sources */,
+				96A867EB29ED94A700783A9F /* LokasiRestoranViewController.swift in Sources */,
 				968EE4822A26EA1D0025D667 /* LokasiRestoClass.swift in Sources */,
 				96A2BD9F2A2849350001B02F /* MenuStruct.swift in Sources */,
 				963DDD592996567A001750EF /* ChangePasswordViewController.swift in Sources */,
+				9648BE2B2A4BABA400EC866F /* BatalkanPesananViewController.swift in Sources */,
 				9622C76229880A6E008686CF /* AppDelegate.swift in Sources */,
-				96DC7E872A36CB9200B23AEF /* OrderSumStruct.swift in Sources */,
 				968926D929E0FC6D001305E2 /* MenuTableViewCell.swift in Sources */,
 				96851DA329FFDB6000E3CC5E /* OutletTableViewCell.swift in Sources */,
 				9662A280298C84BE00017542 /* LandingPageViewController.swift in Sources */,
 				9622C76429880A6E008686CF /* SceneDelegate.swift in Sources */,
-				9606DC7E29EBFF3D006D9FDD /* DetailHistoryViewController.swift in Sources */,
+				9606DC7E29EBFF3D006D9FDD /* DetailPesananViewController.swift in Sources */,
 				960899E029BCE37C00939FC1 /* BayarViewController.swift in Sources */,
 				965799E729FCBD55006119C0 /* PilihLokasiTableViewCell.swift in Sources */,
-				963057A129ED68730012F92B /* DetailPenawaranViewController.swift in Sources */,
+				963057A129ED68730012F92B /* DetailPromoViewController.swift in Sources */,
 				9618B55E2990D4EA007696F4 /* ForgotPWDViewController.swift in Sources */,
 				965772B829F7E2FB0013C525 /* AlamatTableViewCell.swift in Sources */,
 				96F6B31F2A0B03B4009C7C82 /* UlasanViewController.swift in Sources */,
 				966BC8D429EB7F28006BA39A /* MetodeBayarClass.swift in Sources */,
-				96F2D8692A1056ED00EA0094 /* Penawaran2ViewController.swift in Sources */,
-				96A6516029E3814200A54F09 /* historyTableView.swift in Sources */,
+				96F2D8692A1056ED00EA0094 /* Promo2ViewController.swift in Sources */,
+				96A6516029E3814200A54F09 /* RiwayatTableView.swift in Sources */,
 				96A6516229E38A2900A54F09 /* DetailMenuViewController.swift in Sources */,
-				965772B129F7DE300013C525 /* InputAlamatViewController.swift in Sources */,
-				96845E0F29ED274A004D1889 /* PenawaranViewController.swift in Sources */,
+				965772B129F7DE300013C525 /* DaftarAlamatViewController.swift in Sources */,
+				96845E0F29ED274A004D1889 /* PromoViewController.swift in Sources */,
 				965556A929EC568E00EFCE13 /* historyDetailTableViewCell.swift in Sources */,
 				962E341029E2379300604DA9 /* checkoutTableViewCell.swift in Sources */,
 				9605A71B2A2619BB00BA0023 /* LocationOutletMenuViewController copy.swift in Sources */,

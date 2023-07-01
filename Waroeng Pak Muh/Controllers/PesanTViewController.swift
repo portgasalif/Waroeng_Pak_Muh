@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PesanTViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
+class PesanViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var menuTable: UITableView!
@@ -122,6 +122,12 @@ class PesanTViewController: UIViewController, UITableViewDataSource, UITableView
         menuTable.reloadRows(at: [IndexPath(row: index, section: 0)], with: .none)
         updateTotalPrice()
     }
+    @IBAction func myUnwindToPesan(unwindSegue: UIStoryboardSegue) {
+        for i in 0..<data.count {
+            data[i].qtys = 0
+        }
+
+    }
     //MARK: - Function Total Harga
     func updateTotalPrice() {
         var totalPrice: Double = 0.0
@@ -131,7 +137,7 @@ class PesanTViewController: UIViewController, UITableViewDataSource, UITableView
         self.totalPrice = totalPrice
         // update label totalLabel pada view controller
         bayarButton.setTitle(String(format: "Rp%.3f", totalPrice), for: .normal)
-        bayarButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        bayarButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         // update visibility of bayarButton
         bayarButton.isHidden = totalPrice == 0.0
     }

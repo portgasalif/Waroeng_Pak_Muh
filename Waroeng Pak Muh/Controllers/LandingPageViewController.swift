@@ -31,4 +31,8 @@ class LandingPageViewController: UIViewController {
             myView?.layer.addSublayer(borderLayer)
         }
     }
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+        // Anda dapat menambahkan kode di sini untuk melakukan tugas yang relevan selama proses penutupan
+    }
+
 }

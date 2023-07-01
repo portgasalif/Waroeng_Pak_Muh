@@ -26,8 +26,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //        emailTextField.text = ""
-        //        passwordTextField.text = ""
+                emailTextField.text = ""
+                passwordTextField.text = ""
     }
     //MARK: - Keyboard Section
     @objc func keyboardWillShow(_ notification: Notification) {
@@ -56,7 +56,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     @IBAction func loginPressed(_ sender: UIButton) {
-        
         let enteredEmail = emailTextField.text
         let enteredPassword = passwordTextField.text
         
@@ -76,7 +75,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
             
             let userID = currentUser.uid
-            
             let db = Firestore.firestore()
             
             // Cek apakah koleksi alamat sudah ada untuk pengguna saat ini

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class historyTableView: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class RiwayatTableView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var historyTable: UITableView!
     let words = ["17 April 2023", "15 April 2023"]
